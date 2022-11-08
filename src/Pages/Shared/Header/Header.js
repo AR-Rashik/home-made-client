@@ -137,7 +137,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/login"
                     className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                   >
                     Login
@@ -416,8 +416,8 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/blog"
                     className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     Blog
@@ -439,11 +439,11 @@ const Header = () => {
                         />
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/login"
                     className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
                   >
                     Login
@@ -465,7 +465,7 @@ const Header = () => {
                         />
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </li>
                 {/* <li>
                   <a
