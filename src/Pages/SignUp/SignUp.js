@@ -1,17 +1,33 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 
-const Login = () => {
+const SignUp = () => {
   const [showpass, setShowPass] = useState(false);
 
-  const handleLogin = (event) => {
+  const { createUser } = useContext(AuthContext);
+
+  const handleSignUp = (event) => {
     event.preventDefault();
+
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.error("Create user error: ", error));
   };
+
   return (
     <>
       <div className="bg-indigo-50">
         <form
-          onSubmit={handleLogin}
+          onSubmit={handleSignUp}
           className="xl:px-20 md:px-10 sm:px-6 px-4 md:py-12 py-9 2xl:mx-auto 2xl:container md:flex items-center justify-center"
         >
           <div className="bg-white shadow-lg rounded xl:w-1/3 lg:w-5/12 md:w-1/2 w-full lg:px-10 sm:px-6 sm:py-10 px-2 py-6">
@@ -19,19 +35,19 @@ const Login = () => {
               tabIndex={0}
               className="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800"
             >
-              Login to your account
+              Create a new account
             </p>
             <p
               tabIndex={0}
               className="focus:outline-none text-sm mt-4 font-medium leading-none text-gray-500"
             >
-              Do not have an account?{" "}
+              Already have an account?{" "}
               <Link
-                to="/signup"
+                to="/login"
                 className="hover:text-gray-500 focus:text-gray-500 focus:outline-none focus:underline hover:underline text-sm font-bold leading-none text-gray-800 cursor-pointer"
               >
                 {" "}
-                Sign up here
+                Login here
               </Link>
             </p>
             <button
@@ -73,6 +89,24 @@ const Login = () => {
               </p>
               <hr className="w-full bg-gray-400" />
             </div>
+            <div className="mb-4">
+              <label
+                htmlFor="name"
+                className="text-sm font-medium leading-none text-gray-800"
+              >
+                {" "}
+                Name{" "}
+              </label>
+              <input
+                required
+                name="name"
+                id="name"
+                aria-labelledby="name"
+                type="text"
+                className="bg-gray-200 border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2"
+                placeholder="Your name"
+              />
+            </div>
             <div>
               <label
                 htmlFor="email"
@@ -88,7 +122,7 @@ const Login = () => {
                 aria-labelledby="email"
                 type="email"
                 className="bg-gray-200 border rounded text-xs font-medium leading-none placeholder-gray-800 text-gray-800 py-3 w-full pl-3 mt-2"
-                placeholder="e.g: john@gmail.com "
+                placeholder="Your email"
               />
             </div>
             <div className="mt-6 w-full">
@@ -150,7 +184,7 @@ const Login = () => {
             <div className="mt-8">
               <input
                 type="submit"
-                value="Login"
+                value="Create my account"
                 className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full"
               />
             </div>
@@ -224,4 +258,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
