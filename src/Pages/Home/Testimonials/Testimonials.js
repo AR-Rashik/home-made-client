@@ -12,7 +12,7 @@ const Testimonials = () => {
         </h1>
         <div className="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:px-20 px-10 py-20 gap-6">
           <div>
-            <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 cursor-pointer shadow-md md:p-12 p-6">
+            <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 transition duration-300 ease-in-out cursor-pointer shadow-md md:p-12 p-6">
               <div className="text-gray-600 group-hover:text-white flex flex-col items-center">
                 <svg
                   width={26}
@@ -48,7 +48,7 @@ const Testimonials = () => {
                   recommending you to everyone
                 </p>
               </div>
-              <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
+              <div className="text-white group-hover:text-indigo-700 transition duration-300 ease-in-out absolute bottom-0 -mb-6">
                 <svg
                   width={34}
                   height={28}
@@ -137,7 +137,7 @@ const Testimonials = () => {
             </div>
           </div>
           <div>
-            <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 cursor-pointer shadow-md md:p-12 p-6">
+            <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 transition duration-300 ease-in-out cursor-pointer shadow-md md:p-12 p-6">
               <div className="text-gray-600 group-hover:text-white flex flex-col items-center">
                 <svg
                   width={26}
@@ -173,7 +173,7 @@ const Testimonials = () => {
                   recommending you to everyone
                 </p>
               </div>
-              <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
+              <div className="text-white group-hover:text-indigo-700 transition duration-300 ease-in-out absolute bottom-0 -mb-6">
                 <svg
                   width={34}
                   height={28}
@@ -262,7 +262,7 @@ const Testimonials = () => {
             </div>
           </div>
           <div>
-            <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 cursor-pointer shadow-md md:p-12 p-6">
+            <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 transition duration-300 ease-in-out cursor-pointer shadow-md md:p-12 p-6">
               <div className="text-gray-600 group-hover:text-white flex flex-col items-center">
                 <svg
                   width={26}
@@ -298,7 +298,7 @@ const Testimonials = () => {
                   recommending you to everyone
                 </p>
               </div>
-              <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
+              <div className="text-white group-hover:text-indigo-700 transition duration-300 ease-in-out absolute bottom-0 -mb-6">
                 <svg
                   width={34}
                   height={28}
