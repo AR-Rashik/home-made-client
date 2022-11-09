@@ -53,9 +53,12 @@ const ServiceCard = ({ service }) => {
             </div>
           </div> */}
           <div className="flex items-center justify-between py-4">
-            <button className="mx-2 my-2 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-6 py-2 font-medium text-sm">
+            <Link
+              to={`/services/${_id}`}
+              className="mx-2 my-2 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-6 py-2 font-medium text-sm"
+            >
               Details
-            </button>
+            </Link>
             <h3 className="text-indigo-700 text-xl font-semibold">${price}</h3>
           </div>
         </div>
