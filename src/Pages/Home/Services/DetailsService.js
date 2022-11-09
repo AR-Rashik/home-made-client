@@ -1,11 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
+import ServiceReview from "../../MyReviews/ServiceReview";
 
 const DetailsService = () => {
   const service = useLoaderData();
   const { image_url, title, price, details, _id, rating } = service;
   const { user } = useContext(AuthContext);
+
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/servicereviews?service=${_id}`)
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, [_id]);
 
   const handleReview = (event) => {
     event.preventDefault();
@@ -15,6 +24,8 @@ const DetailsService = () => {
     const email = user?.email || "unregistered";
     const image = user?.photoURL;
     const message = form.message.value;
+
+    const date = Date;
 
     const review = {
       service: _id,
@@ -73,6 +84,20 @@ const DetailsService = () => {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Service reviews section */}
+      <div className="py-12 px-4 md:px-6 2xl:px-0 2xl:container 2xl:mx-auto flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center w-full space-y-8">
+          <div className="flex justify-center items-center">
+            <p className="text-3xl lg:text-4xl font-semibold leading-7 lg:leading-9 text-gray-800">
+              Reviews
+            </p>
+          </div>
+          {/* Single reviews */}
+          {reviews.map((review) => (
+            <ServiceReview key={review._id} review={review}></ServiceReview>
+          ))}
         </div>
       </div>
       {/*Client Review section */}

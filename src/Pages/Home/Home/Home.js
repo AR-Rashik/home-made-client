@@ -3,6 +3,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import Banner from "../Banner/Banner";
 import Services from "../Services/Services";
 import Testimonials from "../Testimonials/Testimonials";
+import "react-photo-view/dist/react-photo-view.css";
 
 const Home = () => {
   return (
