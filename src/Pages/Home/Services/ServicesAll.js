@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 
-const Services = () => {
+const ServicesAll = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("http://localhost:5000/allservices")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -25,17 +24,9 @@ const Services = () => {
             ))}
           </div>
         </div>
-        <div className="text-center mt-10">
-          <Link
-            to="/services"
-            className="w-12 mx-auto bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-12 py-2 text-lg "
-          >
-            See All
-          </Link>
-        </div>
       </div>
     </div>
   );
 };
 
-export default Services;
+export default ServicesAll;

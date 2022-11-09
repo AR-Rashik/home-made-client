@@ -5,7 +5,7 @@ const ServiceCard = ({ service }) => {
   const { image_url, title, price, details, _id, rating } = service;
 
   return (
-    <div className="mx-2 w-72 lg:mb-0 mb-8">
+    <div className="mx-2 w-72 lg:mb-0 mb-8 hover:shadow-indigo-200 hover:shadow-2xl transition duration-150 ease-in-out">
       <div>
         <img src={image_url} className="w-full h-44" alt="" />
       </div>
@@ -37,7 +37,9 @@ const ServiceCard = ({ service }) => {
             <h2 className="text-lg font-semibold">{title}</h2>
             {/* <p className="text-xs text-gray-600 pl-5">4 days ago</p> */}
           </div>
-          <p className="text-md text-gray-600 mt-2">{details}</p>
+          <p className="text-md text-gray-600 mt-2">
+            {details.length > 100 ? details.slice(0, 100) + "..." : details}
+          </p>
           {/* <div className="flex mt-4">
             <div>
               <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">

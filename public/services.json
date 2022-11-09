@@ -1,62 +1,56 @@
 [
   {
-    "_id": "0282e0e58a5c404fbd15261f11c2ab6a",
     "category_id": "1",
-    "rating": { "number": 4.8, "badge": "Excellent" },
-    "total_view": 488,
-    "price": 10000,
-    "title": "Web development",
-    "image_url": "https://i.pinimg.com/736x/c6/2f/d5/c62fd5639e15e77e61ced1f3d75553c9.jpg",
-    "details": "A web developer contributes to the second stage of creating a website. When the entire structure and expectations are set, a web developer can start putting things into practice. And even here, you can have different types of web developers as well. When hiring or becoming a web developer, you can take your pick between these three options:Frontend Developer – If you’re hiring a frontend developer, they will take charge of the way your website looks. The main languages that are used by frontend developers are HTML, CSS and Javascript. Some work with CMS platforms as well where they can take care of the frontend of a website using themes and builders. In this case, a lot of the coding work is taken out of hands but knowledge of CSS, in particular, is still required to be able to make tweaks whenever needed.Backend Developer – A backend developer, on the other hand, takes care of the backend of a website. Making everything work functionally is the main priority. Backend developers have very code-intensive days and need to make everything work with the frontend of a website. Often, this includes making an eCommerce website work or have membership websites up and running.Full Stack Developer – Full stack developers are the best of both worlds. They take care of both the backend and frontend of a website. In many cases, this makes the workflow easier."
+    "rating": { "number": 4.9, "badge": "Excellent" },
+    "total_view": 458,
+    "price": 450,
+    "title": "Italian Salad",
+    "image_url": "https://images.unsplash.com/photo-1551014028-6eaadc98a1ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "details": "My go-to salad recipe is this fresh and flavorful Italian Salad. It’s made with crisp lettuce, ripe tomatoes, red onion, sliced black olives, crunchy croutons, Parmesan cheese and zesty pepperoni's. All of that deliciousness gets tossed in an easy homemade Italian vinaigrette for an irresistible Italian salad, you’re going to want to serve with everything. And you totally can because this salad pairs well with pretty much any dish and it’s fabulous topped with chicken, shrimp or fish for a light meal."
   },
   {
-    "_id": "0282e0e58a5c404fbd15261f11c2ab6b",
     "category_id": "2",
-    "rating": { "number": 4.8, "badge": "Excellent" },
-    "total_view": 488,
-    "price": 10000,
-    "title": "Web development",
-    "image_url": "https://i.pinimg.com/736x/c6/2f/d5/c62fd5639e15e77e61ced1f3d75553c9.jpg",
-    "details": "A web developer contributes to the second stage of creating a website. When the entire structure and expectations are set, a web developer can start putting things into practice. And even here, you can have different types of web developers as well. When hiring or becoming a web developer, you can take your pick between these three options:Frontend Developer – If you’re hiring a frontend developer, they will take charge of the way your website looks. The main languages that are used by frontend developers are HTML, CSS and Javascript. Some work with CMS platforms as well where they can take care of the frontend of a website using themes and builders. In this case, a lot of the coding work is taken out of hands but knowledge of CSS, in particular, is still required to be able to make tweaks whenever needed.Backend Developer – A backend developer, on the other hand, takes care of the backend of a website. Making everything work functionally is the main priority. Backend developers have very code-intensive days and need to make everything work with the frontend of a website. Often, this includes making an eCommerce website work or have membership websites up and running.Full Stack Developer – Full stack developers are the best of both worlds. They take care of both the backend and frontend of a website. In many cases, this makes the workflow easier."
+    "rating": { "number": 4.6, "badge": "Excellent" },
+    "total_view": 228,
+    "price": 600,
+    "title": "Oven-baked Salmon",
+    "image_url": "https://images.unsplash.com/photo-1539136788836-5699e78bfc75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "details": " tender garlic butter baked salmon with crispy roast potatoes, asparagus and a delicious garlic butter sauce! A recipe of your dreams! A complete meal on one pan full of flavour. Garlic Butter Baked Salmon is easy to make using minimal ingredients you already have in your kitchen! PLUS the bonus of having only one pan to wash and no mess in your kitchen to clean up when your done."
   },
   {
-    "_id": "0282e0e58a5c404fbd15261f11c2ab6c",
     "category_id": "3",
     "rating": { "number": 4.8, "badge": "Excellent" },
-    "total_view": 488,
-    "price": 10000,
-    "title": "Web development",
-    "image_url": "https://i.pinimg.com/736x/c6/2f/d5/c62fd5639e15e77e61ced1f3d75553c9.jpg",
-    "details": "A web developer contributes to the second stage of creating a website. When the entire structure and expectations are set, a web developer can start putting things into practice. And even here, you can have different types of web developers as well. When hiring or becoming a web developer, you can take your pick between these three options:Frontend Developer – If you’re hiring a frontend developer, they will take charge of the way your website looks. The main languages that are used by frontend developers are HTML, CSS and Javascript. Some work with CMS platforms as well where they can take care of the frontend of a website using themes and builders. In this case, a lot of the coding work is taken out of hands but knowledge of CSS, in particular, is still required to be able to make tweaks whenever needed.Backend Developer – A backend developer, on the other hand, takes care of the backend of a website. Making everything work functionally is the main priority. Backend developers have very code-intensive days and need to make everything work with the frontend of a website. Often, this includes making an eCommerce website work or have membership websites up and running.Full Stack Developer – Full stack developers are the best of both worlds. They take care of both the backend and frontend of a website. In many cases, this makes the workflow easier."
+    "total_view": 368,
+    "price": 300,
+    "title": "Japanese Ramen",
+    "image_url": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    "details": "It tasted a little hot and spicy and it smelled good like chicken soup. Also it was a little bit hard to make because I don't know how to use the stove. My family liked it, specially my younger brothers, but my dad didn't . It was similar to one in a Japanese restaurant. And it looked similar to japanese food, like the images in the recipe. It just doesn't get a 5 star rating because the pork was tasteless,if I added some salt it would be better. Use chicken, noodles, spinach, sweetcorn and eggs to make this moreish Japanese noodle soup, for when you crave something comforting yet light and wholesome."
   },
   {
-    "_id": "0282e0e58a5c404fbd15261f11c2ab6d",
     "category_id": "4",
-    "rating": { "number": 4.8, "badge": "Excellent" },
-    "total_view": 488,
-    "price": 10000,
-    "title": "Web development",
-    "image_url": "https://i.pinimg.com/736x/c6/2f/d5/c62fd5639e15e77e61ced1f3d75553c9.jpg",
-    "details": "A web developer contributes to the second stage of creating a website. When the entire structure and expectations are set, a web developer can start putting things into practice. And even here, you can have different types of web developers as well. When hiring or becoming a web developer, you can take your pick between these three options:Frontend Developer – If you’re hiring a frontend developer, they will take charge of the way your website looks. The main languages that are used by frontend developers are HTML, CSS and Javascript. Some work with CMS platforms as well where they can take care of the frontend of a website using themes and builders. In this case, a lot of the coding work is taken out of hands but knowledge of CSS, in particular, is still required to be able to make tweaks whenever needed.Backend Developer – A backend developer, on the other hand, takes care of the backend of a website. Making everything work functionally is the main priority. Backend developers have very code-intensive days and need to make everything work with the frontend of a website. Often, this includes making an eCommerce website work or have membership websites up and running.Full Stack Developer – Full stack developers are the best of both worlds. They take care of both the backend and frontend of a website. In many cases, this makes the workflow easier."
+    "rating": { "number": 4.7, "badge": "Excellent" },
+    "total_view": 588,
+    "price": 250,
+    "title": "Chicken Soup",
+    "image_url": "https://images.unsplash.com/photo-1512003867696-6d5ce6835040?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "details": "The Best Chicken Soup You’ll Ever Eat. The BEST chicken soup you’ll ever eat is the perfect recipe to make when you’re feeling sick. Packed with anti-inflammatory ingredients like ginger, turmeric, garlic. Bring soup to a boil, then stir in couscous. You’ll want the chicken to be covered by the broth so make sure you stir them down to the bottom.Once chicken is cooked, remove with a slotted spoon and transfer to a cutting board to shred with two forks. Add chicken back to pot then stir in frozen peas. If you find that you don't have enough broth, feel free to add in another cup. Everyone likes their soup differently. Taste and adjust seasonings, if necessary. Enjoy."
   },
   {
-    "_id": "0282e0e58a5c404fbd15261f11c2ab6e",
     "category_id": "5",
     "rating": { "number": 4.8, "badge": "Excellent" },
-    "total_view": 488,
-    "price": 10000,
-    "title": "Web development",
-    "image_url": "https://i.pinimg.com/736x/c6/2f/d5/c62fd5639e15e77e61ced1f3d75553c9.jpg",
-    "details": "A web developer contributes to the second stage of creating a website. When the entire structure and expectations are set, a web developer can start putting things into practice. And even here, you can have different types of web developers as well. When hiring or becoming a web developer, you can take your pick between these three options:Frontend Developer – If you’re hiring a frontend developer, they will take charge of the way your website looks. The main languages that are used by frontend developers are HTML, CSS and Javascript. Some work with CMS platforms as well where they can take care of the frontend of a website using themes and builders. In this case, a lot of the coding work is taken out of hands but knowledge of CSS, in particular, is still required to be able to make tweaks whenever needed.Backend Developer – A backend developer, on the other hand, takes care of the backend of a website. Making everything work functionally is the main priority. Backend developers have very code-intensive days and need to make everything work with the frontend of a website. Often, this includes making an eCommerce website work or have membership websites up and running.Full Stack Developer – Full stack developers are the best of both worlds. They take care of both the backend and frontend of a website. In many cases, this makes the workflow easier."
+    "total_view": 350,
+    "price": 500,
+    "title": "Chocolate Cookie",
+    "image_url": "https://images.unsplash.com/photo-1622467827417-bbe2237067a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    "details": "These delicious chocolate cookies taste like brownies. They're crisp on the outside, soft, and fuggy on the inside. Preheat the oven to 350 degrees F (175 degrees C). Cream sugar and margarine in a large bowl until light and fluffy. Beat in eggs, one at a time, then stir in vanilla. Combine flour, cocoa, baking soda, and salt in a separate bowl. Add to the creamed mixture and mix until just blended. Stir in walnuts. Drop spoonfuls of dough 2 inches apart onto unerased cookie sheets. Bake in the preheated oven until edges are set and centers are soft, 8 to 10 minutes. Let sit briefly before transferring to wire racks to cool completely."
   },
   {
-    "_id": "0282e0e58a5c404fbd15261f11c2ab6f",
     "category_id": "6",
-    "rating": { "number": 4.8, "badge": "Excellent" },
-    "total_view": 488,
-    "price": 10000,
-    "title": "Web development",
-    "image_url": "https://i.pinimg.com/736x/c6/2f/d5/c62fd5639e15e77e61ced1f3d75553c9.jpg",
-    "details": "A web developer contributes to the second stage of creating a website. When the entire structure and expectations are set, a web developer can start putting things into practice. And even here, you can have different types of web developers as well. When hiring or becoming a web developer, you can take your pick between these three options:Frontend Developer – If you’re hiring a frontend developer, they will take charge of the way your website looks. The main languages that are used by frontend developers are HTML, CSS and Javascript. Some work with CMS platforms as well where they can take care of the frontend of a website using themes and builders. In this case, a lot of the coding work is taken out of hands but knowledge of CSS, in particular, is still required to be able to make tweaks whenever needed.Backend Developer – A backend developer, on the other hand, takes care of the backend of a website. Making everything work functionally is the main priority. Backend developers have very code-intensive days and need to make everything work with the frontend of a website. Often, this includes making an eCommerce website work or have membership websites up and running.Full Stack Developer – Full stack developers are the best of both worlds. They take care of both the backend and frontend of a website. In many cases, this makes the workflow easier."
+    "rating": { "number": 4.7, "badge": "Excellent" },
+    "total_view": 200,
+    "price": 800,
+    "title": "Cakes",
+    "image_url": "https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1292&q=80",
+    "details": "Discover a selection of our favorite bakes. Whether you fancy making bread, brownies, cookies, cakes or tarts, we've got the perfect recipe for every occasion. A cross between banana bread and a drizzle cake, this easy banana loaf recipe is a quick bake that can be frozen. It's great for using up overripe bananas, too. An easy chocolate chip cookie recipe for soft biscuits with a squidgy middle that will impress family and friends. Make plenty as they're sure to be a hit. A simple but very impressive pud, light enough to have a slice to finish a big meal. Update the retro upside-down cake with the sunny flavours of coconut, lime and a splash of coconut rum – it gives the cake a glorious boozy edge."
   }
 ]
