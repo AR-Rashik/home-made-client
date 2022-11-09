@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 const DetailsService = () => {
   const service = useLoaderData();
   const { image_url, title, price, details, _id, rating } = service;
+  const { user } = useContext(AuthContext);
 
   return (
     <div className="xl:mx-auto xl:container">
+      {/* Service details section */}
       <div className="lg:px-20 md:px-6 px-4 md:py-12 py-8">
         <div className="flex flex-col-reverse lg:flex-row items-center">
           <div className="w-full lg:w-1/2 md:py-9 py-6">
@@ -33,6 +36,33 @@ const DetailsService = () => {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      {/*Client Review section */}
+      <div className="text-center">
+        <p className="lg:text-4xl md:text-3xl text-3xl text-center font-semibold text-gray-800">
+          Give us your review
+        </p>
+        <p className="text-center mt-4 text-gray-600">
+          Do you have any thoughts you’d like to share?
+        </p>
+        <div className="mt-8 px-4 flex flex-col justify-center items-center">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            className="md:w-[643px] w-full resize-none focus:outline-none border border-gray-300 px-3 py-3 mb-4"
+          />
+          <textarea
+            className="md:w-[643px] w-full md:h-[208px] h-[340px] resize-none focus:outline-none border border-gray-300 px-3 py-3"
+            placeholder="Your review..."
+            defaultValue={""}
+          />
+        </div>
+        <div className="lg:flex justify-center gap-8 text-center lg:mt-6 md:mt-8 mt-8">
+          <button className="bg-gray-800 hover:bg-gray-700 transition duration-300 ease-out lg:max-w-[187px] w-full text-white py-3 font-medium text-base">
+            Submit
+          </button>
         </div>
       </div>
     </div>
