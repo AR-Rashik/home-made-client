@@ -4,6 +4,7 @@ import Home from "../../Home/Home/Home";
 import DetailsService from "../../Home/Services/DetailsService";
 import ServicesAll from "../../Home/Services/ServicesAll";
 import Login from "../../Login/Login";
+import MyReviews from "../../MyReviews/MyReviews";
 import SignUp from "../../SignUp/SignUp";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         element: <DetailsService></DetailsService>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/services/${params.id}`),
+      },
+      {
+        path: "/myreviews",
+        element: <MyReviews></MyReviews>,
       },
     ],
   },
