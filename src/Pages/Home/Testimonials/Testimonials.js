@@ -129,10 +129,10 @@ const Testimonials = () => {
                 className="w-12 h-12"
               />
               <p className="text-base font-semibold leading-4 my-2 text-gray-800">
-                Tom Koch
+                Fakir Khan
               </p>
               <p className="text-base leading-4 text-center text-gray-600">
-                Developer
+                Businessman
               </p>
             </div>
           </div>
@@ -254,10 +254,10 @@ const Testimonials = () => {
                 className="w-12 h-12"
               />
               <p className="text-base font-semibold leading-4 my-2 text-gray-800">
-                Alan Max
+                Shiraj Abdullah
               </p>
               <p className="text-base leading-4 text-center text-gray-600">
-                Designer
+                Police officer
               </p>
             </div>
           </div>
@@ -379,10 +379,10 @@ const Testimonials = () => {
                 className="w-12 h-12"
               />
               <p className="text-base font-semibold leading-4 my-2 text-gray-800">
-                Kera Joo
+                Kaiyum Ullah
               </p>
               <p className="text-base leading-4 text-center text-gray-600">
-                Support
+                Doctor
               </p>
             </div>
           </div>
