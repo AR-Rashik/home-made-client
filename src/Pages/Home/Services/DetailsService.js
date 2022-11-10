@@ -25,8 +25,6 @@ const DetailsService = () => {
     const image = user?.photoURL;
     const message = form.message.value;
 
-    const date = Date;
-
     const review = {
       service: _id,
       serviceName: title,
