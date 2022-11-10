@@ -3,7 +3,22 @@ import React, { useState } from "react";
 const MySingleReview = ({ review }) => {
   const [menu, setMenu] = useState(true);
 
-  const { service, serviceName, customer, image, message, email } = review;
+  const { service, serviceName, customer, image, message, email, _id } = review;
+
+  const handleDelete = (_id) => {
+    const proceed = window.confirm(
+      "Are you sure you want to delete this review?"
+    );
+    if (proceed) {
+      fetch(`http://localhost:5000/reviews/${_id}`, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        });
+    }
+  };
 
   return (
     <div className="md:w-4/6 w-full flex justify-start items-start flex-col bg-indigo-100 p-8 rounded-md">
@@ -117,22 +132,35 @@ const MySingleReview = ({ review }) => {
         <p className="mt-3 text-base leading-normal text-gray-700 w-full md:w-9/12 xl:w-5/6">
           {message}
         </p>
-        <div className="mt-6 flex justify-start items-center flex-row space-x-2.5">
-          <div>
-            {image ? (
-              <img src={image} alt="avatar" />
-            ) : (
-              <img
-                src="https://i.ibb.co/QcqyrVG/Mask-Group.png"
-                alt=" default avatar"
-              />
-            )}
+        <div>
+          <div className="mt-6 flex justify-start items-center flex-row space-x-2.5">
+            <div>
+              {image ? (
+                <img src={image} alt="avatar" />
+              ) : (
+                <img
+                  src="https://i.ibb.co/QcqyrVG/Mask-Group.png"
+                  alt=" default avatar"
+                />
+              )}
+            </div>
+            <div className="flex flex-col justify-start items-start space-y-2">
+              <p className="text-base font-medium leading-none text-gray-800">
+                {customer}
+              </p>
+              <p className="text-sm leading-none text-gray-600">{email}</p>
+            </div>
           </div>
-          <div className="flex flex-col justify-start items-start space-y-2">
-            <p className="text-base font-medium leading-none text-gray-800">
-              {customer}
-            </p>
-            <p className="text-sm leading-none text-gray-600">{email}</p>
+          <div className="mt-4">
+            <button className="mx-2 my-2 bg-white transition duration-150 ease-in-out hover:border-amber-500 hover:bg-amber-500 hover:text-gray-800 rounded border border-indigo-700 text-indigo-700 px-6 py-2 text-sm font-medium">
+              Update
+            </button>
+            <button
+              onClick={() => handleDelete(_id)}
+              className="mx-2 my-2 bg-indigo-700 transition duration-150 ease-in-out hover:bg-rose-500 rounded text-white px-6 py-2 text-sm font-medium"
+            >
+              Delete
+            </button>
           </div>
         </div>
       </div>

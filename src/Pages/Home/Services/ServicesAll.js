@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import useTitle from "../../../hooks/useTitle";
 import ServiceCard from "./ServiceCard";
 
 const ServicesAll = () => {
@@ -9,6 +10,8 @@ const ServicesAll = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+
+  useTitle("All services");
 
   return (
     <div className="2xl:mx-auto 2xl:container">

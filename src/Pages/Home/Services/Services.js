@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useTitle from "../../../hooks/useTitle";
 import ServiceCard from "./ServiceCard";
 
 const Services = () => {
@@ -10,6 +11,8 @@ const Services = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+
+  useTitle("Services");
 
   return (
     <div className="2xl:mx-auto 2xl:container">

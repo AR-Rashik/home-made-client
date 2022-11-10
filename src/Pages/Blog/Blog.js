@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import useTitle from "../../hooks/useTitle";
 
 const Blog = () => {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
   const [open4, setOpen4] = useState(false);
-  const [open5, setOpen5] = useState(false);
+
+  useTitle("Blog");
 
   return (
     <div className=" lg:container lg:mx-auto lg:py-16 md:py-12 md:px-6 py-12 px-4">
