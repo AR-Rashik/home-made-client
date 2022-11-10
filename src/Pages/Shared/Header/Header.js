@@ -6,7 +6,13 @@ const Header = () => {
   const [mdOptionsToggle, setMdOptionsToggle] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
 
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then()
+      .catch((error) => console.error("Logout Error: ", error));
+  };
 
   return (
     <div className="dark:bg-gray-900">
@@ -57,12 +63,12 @@ const Header = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/logout"
+                      <button
+                        onClick={handleLogOut}
                         className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                       >
                         Log Out
-                      </Link>
+                      </button>
                     </li>
                   </>
                 ) : (

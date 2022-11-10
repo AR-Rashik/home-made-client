@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import useTitle from "../../hooks/useTitle";
 
@@ -7,6 +7,10 @@ const Login = () => {
   const [showpass, setShowPass] = useState(false);
 
   const { logIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const from = location.state?.form?.pathname || "/";
 
   useTitle("Login");
 
@@ -21,6 +25,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate(from, { replace: true });
       })
       .catch((error) => console.error("Login in error: ", error));
   };

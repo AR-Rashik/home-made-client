@@ -8,6 +8,7 @@ import Login from "../../Login/Login";
 import MyReviews from "../../MyReviews/MyReviews";
 import UpdateReview from "../../MyReviews/UpdateReview";
 import SignUp from "../../SignUp/SignUp";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -44,11 +45,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/myreviews",
-        element: <MyReviews></MyReviews>,
+        element: (
+          <PrivateRoute>
+            <MyReviews></MyReviews>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/addservice",
-        element: <AddService></AddService>,
+        element: (
+          <PrivateRoute>
+            <AddService></AddService>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/myreviews/update/:id",

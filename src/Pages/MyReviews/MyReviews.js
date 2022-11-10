@@ -36,23 +36,31 @@ const MyReviews = () => {
   };
 
   return (
-    <div className="py-12 px-4 md:px-6 2xl:px-0 2xl:container 2xl:mx-auto flex justify-center items-center">
-      <div className="flex flex-col justify-center items-center w-full space-y-8">
-        <div className="flex justify-center items-center">
-          <p className="text-3xl lg:text-4xl font-semibold leading-7 lg:leading-9 text-gray-800">
-            Reviews
-          </p>
+    <>
+      {reviews.length !== 0 ? (
+        <div className="py-12 px-4 md:px-6 2xl:px-0 2xl:container 2xl:mx-auto flex justify-center items-center">
+          <div className="flex flex-col justify-center items-center w-full space-y-8">
+            <div className="flex justify-center items-center">
+              <p className="text-3xl lg:text-4xl font-semibold leading-7 lg:leading-9 text-gray-800">
+                Reviews
+              </p>
+            </div>
+            {/* Single reviews */}
+            {reviews.map((review) => (
+              <MySingleReview
+                key={review._id}
+                review={review}
+                handleDelete={handleDelete}
+              ></MySingleReview>
+            ))}
+          </div>
         </div>
-        {/* Single reviews */}
-        {reviews.map((review) => (
-          <MySingleReview
-            key={review._id}
-            review={review}
-            handleDelete={handleDelete}
-          ></MySingleReview>
-        ))}
-      </div>
-    </div>
+      ) : (
+        <div className="text-center font-bold text-6xl my-40">
+          No reviews were added.
+        </div>
+      )}
+    </>
   );
 };
 
