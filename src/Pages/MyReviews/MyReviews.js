@@ -11,11 +11,14 @@ const MyReviews = () => {
   useTitle("My Reviews");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myreviews?email=${user?.email}`, {
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    })
+    fetch(
+      `https://server-home-made.vercel.app/myreviews?email=${user?.email}`,
+      {
+        headers: {
+          authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      }
+    )
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, [user?.email]);
@@ -25,7 +28,7 @@ const MyReviews = () => {
       "Are you sure you want to delete this review?"
     );
     if (proceed) {
-      fetch(`http://localhost:5000/reviews/${id}`, {
+      fetch(`https://server-home-made.vercel.app/reviews/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

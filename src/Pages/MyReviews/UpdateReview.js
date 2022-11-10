@@ -17,13 +17,16 @@ const UpdateReview = () => {
       message,
     };
 
-    fetch(`http://localhost:5000/myreviews/update/${storedReview._id}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(review),
-    })
+    fetch(
+      `https://server-home-made.vercel.app/myreviews/update/${storedReview._id}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(review),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount > 0) {

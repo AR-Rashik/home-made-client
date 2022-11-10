@@ -8,7 +8,7 @@ const ServicesAll = () => {
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allservices")
+    fetch("https://server-home-made.vercel.app/allservices")
       .then((res) => res.json())
       .then((data) => {
         setServices(data);
