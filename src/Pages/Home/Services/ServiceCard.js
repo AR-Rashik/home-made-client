@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PhotoView } from "react-photo-view";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 const ServiceCard = ({ service }) => {
   const { image_url, title, price, details, _id, rating } = service;
@@ -8,7 +9,11 @@ const ServiceCard = ({ service }) => {
   return (
     <div className="mx-2 w-72 lg:mb-0 mb-8 hover:shadow-indigo-200 hover:shadow-2xl transition duration-150 ease-in-out">
       <div>
-        <img src={image_url} className="w-full h-44" alt="" />
+        <PhotoProvider>
+          <PhotoView src={image_url}>
+            <img src={image_url} alt="" className="w-full h-44" />
+          </PhotoView>
+        </PhotoProvider>
       </div>
       <div className="bg-white">
         <div className="flex items-center justify-between px-4 pt-4">
