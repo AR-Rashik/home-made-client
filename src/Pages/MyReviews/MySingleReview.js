@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const MySingleReview = ({ review, handleDelete }) => {
   const [menu, setMenu] = useState(true);
@@ -137,9 +138,12 @@ const MySingleReview = ({ review, handleDelete }) => {
             </div>
           </div>
           <div className="mt-4">
-            <button className="mx-2 my-2 bg-white transition duration-150 ease-in-out hover:border-amber-500 hover:bg-amber-500 hover:text-gray-800 rounded border border-indigo-700 text-indigo-700 px-6 py-2 text-sm font-medium">
+            <Link
+              to={`/myreviews/update/${_id}`}
+              className="mx-2 my-2 bg-white transition duration-150 ease-in-out hover:border-amber-500 hover:bg-amber-500 hover:text-gray-800 rounded border border-indigo-700 text-indigo-700 px-6 py-2 text-sm font-medium"
+            >
               Edit Review
-            </button>
+            </Link>
             <button
               onClick={() => handleDelete(_id)}
               className="mx-2 my-2 bg-indigo-700 transition duration-150 ease-in-out hover:bg-rose-500 rounded text-white px-6 py-2 text-sm font-medium"
