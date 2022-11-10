@@ -120,7 +120,7 @@ const ServiceReview = ({ review }) => {
         <div className="mt-6 flex justify-start items-center flex-row space-x-2.5">
           <div>
             {image ? (
-              <img src={image} alt="avatar" />
+              <img className="rounded-full w-16" src={image} alt="avatar" />
             ) : (
               <img
                 src="https://i.ibb.co/QcqyrVG/Mask-Group.png"

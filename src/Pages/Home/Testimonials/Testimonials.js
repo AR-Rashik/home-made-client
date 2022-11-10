@@ -43,9 +43,8 @@ const Testimonials = () => {
                   </defs>
                 </svg>
                 <p className="xl:w-80 text-base leading-normal text-center mt-4">
-                  When our designs need an expert opinion or approval, I know I
-                  can rely on your agency Thank you for all your help-I will be
-                  recommending you to everyone
+                  The best home made food you can find in the town. The service
+                  is so amazing. 100% recommended. All the best for future.
                 </p>
               </div>
               <div className="text-white group-hover:text-indigo-700 transition duration-300 ease-in-out absolute bottom-0 -mb-6">
@@ -168,9 +167,8 @@ const Testimonials = () => {
                   </defs>
                 </svg>
                 <p className="xl:w-80 text-base leading-normal text-center mt-4">
-                  When our designs need an expert opinion or approval, I know I
-                  can rely on your agency Thank you for all your help-I will be
-                  recommending you to everyone
+                  The best home made food you can find in the town. The service
+                  is so amazing. 100% recommended. All the best for future.
                 </p>
               </div>
               <div className="text-white group-hover:text-indigo-700 transition duration-300 ease-in-out absolute bottom-0 -mb-6">
@@ -293,9 +291,8 @@ const Testimonials = () => {
                   </defs>
                 </svg>
                 <p className="xl:w-80 text-base leading-normal text-center mt-4">
-                  When our designs need an expert opinion or approval, I know I
-                  can rely on your agency Thank you for all your help-I will be
-                  recommending you to everyone
+                  The best home made food you can find in the town. The service
+                  is so amazing. 100% recommended. All the best for future.
                 </p>
               </div>
               <div className="text-white group-hover:text-indigo-700 transition duration-300 ease-in-out absolute bottom-0 -mb-6">
@@ -379,7 +376,7 @@ const Testimonials = () => {
                 className="w-12 h-12"
               />
               <p className="text-base font-semibold leading-4 my-2 text-gray-800">
-                Kaiyum Ullah
+                Shejuti Khan
               </p>
               <p className="text-base leading-4 text-center text-gray-600">
                 Doctor

@@ -85,8 +85,8 @@ const AboutUs = () => {
                   </svg>
                 </div>
                 <p className="text-base leading-6 mt-6 text-center text-gray-600 sm:w-96 w-full">
-                  A phrase is a short selection of words which when put together
-                  create a concept.
+                  Our service is always open you can call us on the opening
+                  time.
                 </p>
               </div>
               <div className="mt-7 flex flex-col items-center">
@@ -181,8 +181,7 @@ const AboutUs = () => {
                   </svg>
                 </div>
                 <p className="text-base leading-6 mt-6 text-center text-gray-600 sm:w-96 w-full">
-                  A phrase is a short selection of words which when put together
-                  create a concept.
+                  You can review on our page and also can see them.
                 </p>
               </div>
             </div>

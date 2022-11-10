@@ -22,10 +22,10 @@ const Header = () => {
           <div className="dark:bg-gray-900 bg-gray-50 px-6 py-9">
             <div className="container mx-auto flex items-center justify-between">
               <h1
-                className="md:w-2/12 cursor-pointer text-gray-800 dark:text-white"
+                className="md:w-2/12 cursor-pointer text-gray-800 dark:text-white font-bold text-2xl"
                 aria-label="Home made."
               >
-                HomeMade.
+                Home<span className="text-indigo-500">Made.</span>
               </h1>
               <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
                 <li>

@@ -122,7 +122,11 @@ const MySingleReview = ({ review, handleDelete }) => {
           <div className="mt-6 flex justify-start items-center flex-row space-x-2.5">
             <div>
               {review?.image ? (
-                <img src={review?.image} alt="avatar" />
+                <img
+                  className="rounded-full w-16"
+                  src={review?.image}
+                  alt="avatar"
+                />
               ) : (
                 <img
                   src="https://i.ibb.co/QcqyrVG/Mask-Group.png"
