@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 const Header = () => {
   const [mdOptionsToggle, setMdOptionsToggle] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
+
+  const { user } = useContext(AuthContext);
 
   return (
     <div className="dark:bg-gray-900">
@@ -35,38 +38,43 @@ const Header = () => {
                     Blog
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/login"
-                    className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
-                  >
-                    Login
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/myreviews"
-                    className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
-                  >
-                    My Reviews
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/addservice"
-                    className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
-                  >
-                    Add Service
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/logout"
-                    className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
-                  >
-                    Log Out
-                  </Link>
-                </li>
+                {user?.email ? (
+                  <>
+                    <li>
+                      <Link
+                        to="/myreviews"
+                        className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                      >
+                        My Reviews
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/addservice"
+                        className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                      >
+                        Add Service
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/logout"
+                        className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                      >
+                        Log Out
+                      </Link>
+                    </li>
+                  </>
+                ) : (
+                  <li>
+                    <Link
+                      to="/login"
+                      className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    >
+                      Login
+                    </Link>
+                  </li>
+                )}
               </ul>
               <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
                 <div className="flex lg:hidden">

@@ -1,24 +1,9 @@
 import React, { useState } from "react";
 
-const MySingleReview = ({ review }) => {
+const MySingleReview = ({ review, handleDelete }) => {
   const [menu, setMenu] = useState(true);
 
   const { service, serviceName, customer, image, message, email, _id } = review;
-
-  const handleDelete = (_id) => {
-    const proceed = window.confirm(
-      "Are you sure you want to delete this review?"
-    );
-    if (proceed) {
-      fetch(`http://localhost:5000/reviews/${_id}`, {
-        method: "DELETE",
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-        });
-    }
-  };
 
   return (
     <div className="md:w-4/6 w-full flex justify-start items-start flex-col bg-indigo-100 p-8 rounded-md">
@@ -153,7 +138,7 @@ const MySingleReview = ({ review }) => {
           </div>
           <div className="mt-4">
             <button className="mx-2 my-2 bg-white transition duration-150 ease-in-out hover:border-amber-500 hover:bg-amber-500 hover:text-gray-800 rounded border border-indigo-700 text-indigo-700 px-6 py-2 text-sm font-medium">
-              Update
+              Edit Review
             </button>
             <button
               onClick={() => handleDelete(_id)}
