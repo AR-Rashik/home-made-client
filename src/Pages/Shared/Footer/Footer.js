@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <div className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 py-12">
       <div className="flex flex-col items-center justify-center">
-        <div className="font-bold">Home made</div>
+        <div className="font-bold">
+          Home<span className="text-indigo-700">Made.</span>
+        </div>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8">
           <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
             About
@@ -78,7 +80,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center mt-6">
           <p className="text-base leading-4 text-gray-800">
-            2022 <span className="font-semibold">Home Made</span>
+            2022 <span className="font-semibold">HomeMade</span>
           </p>
           <div className="border-l border-gray-800 pl-2 ml-2">
             <p className="text-base leading-4 text-gray-800">

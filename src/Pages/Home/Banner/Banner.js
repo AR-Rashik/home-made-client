@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
     <div className="dark:bg-gray-900">
       <div className="flex flex-col lg:flex-row items-stretch justify-between lg:px-0 px-6 lg:py-20 py-8 2xl:mx-auto 2xl:container">
-        <div className="z-30 relative lg:w-1/2">
+        <div className="z-30 relative lg:w-1/2 md:mt-0 mt-16">
           <div className="hidden dark:bg-gray-800 bg-gray-100 w-full lg:w-10/12 lg:h-full lg:flex justify-end items-center">
             <div className="w-full lg:w-auto lg:-mr-32">
               <img
@@ -29,43 +30,45 @@ const Banner = () => {
               Home Made Food
             </h1>
             <p className="dark:text-gray-300 md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-gray-600 mt-5">
-              Get inspired by our curated selection of luxiwood interiors. We
-              hope get inspired to have luxiwood interior yourself. You’ll find
-              tips here where you can buy a lot of cool furniture,decorations,
-              plants, etc.
+              Filled with recipes, how-tos, STEM activities, fun food facts,
+              interactive games, & more. Subscribe to our fun cooking magazine
+              for kids and families. Free Recipes. Cook w/ ChopChop. Fun For The
+              Whole Family. Services: Easy & Healthy Recipes, Cooking Club.
             </p>
-            <button className="dark:bg-white dark:hover:bg-gray-400 dark:hover:text-gray-100 dark:text-gray-800 sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
-              Explore
-              <div className="ml-2 mt-0.5">
-                <svg
-                  className="fill-stroke"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.33325 8H12.6666"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 10.6667L12.6667 8"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 5.33301L12.6667 7.99967"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
+            <Link to="/services">
+              <button className="dark:bg-white dark:hover:bg-gray-400 dark:hover:text-gray-100 dark:text-gray-800 sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
+                Explore
+                <div className="ml-2 mt-0.5">
+                  <svg
+                    className="fill-stroke"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.33325 8H12.6666"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10 10.6667L12.6667 8"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10 5.33301L12.6667 7.99967"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

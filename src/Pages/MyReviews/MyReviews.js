@@ -11,7 +11,11 @@ const MyReviews = () => {
   useTitle("My Reviews");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myreviews?email=${user?.email}`)
+    fetch(`http://localhost:5000/myreviews?email=${user?.email}`, {
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("token")}`,
+      },
+    })
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, [user?.email]);
@@ -73,7 +77,7 @@ const MyReviews = () => {
                     Review Deleted Successfully
                   </h1>
                   <p className="mb-5 text-sm text-gray-600 dark:text-gray-400 text-center font-normal">
-                    You can add more review on different item.
+                    You can add more review on different
                   </p>
                   <div className="flex items-center justify-center w-full">
                     <button

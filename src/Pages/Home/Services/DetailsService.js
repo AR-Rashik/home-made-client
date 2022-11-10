@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 import useTitle from "../../../hooks/useTitle";
 import ServiceReview from "../../MyReviews/ServiceReview";
@@ -102,35 +102,45 @@ const DetailsService = () => {
         </div>
       </div>
       {/*Client Review section */}
-      <form onSubmit={handleReview} className="text-center">
-        <p className="lg:text-4xl md:text-3xl text-3xl text-center font-semibold text-gray-800">
-          Give us your review
-        </p>
-        <p className="text-center mt-4 text-gray-600">
-          Do you have any thoughts you’d like to share?
-        </p>
-        <div className="mt-8 px-4 flex flex-col justify-center items-center">
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter Your Name"
-            className="md:w-[643px] w-full resize-none focus:outline-none border border-gray-300 px-3 py-3 mb-4"
-          />
-          <textarea
-            name="message"
-            className="md:w-[643px] w-full md:h-[208px] h-[340px] resize-none focus:outline-none border border-gray-300 px-3 py-3"
-            placeholder="Your review..."
-            defaultValue={""}
-          />
+      {user?.email ? (
+        <form onSubmit={handleReview} className="text-center">
+          <p className="lg:text-4xl md:text-3xl text-3xl text-center font-semibold text-gray-800">
+            Give us your review
+          </p>
+          <p className="text-center mt-4 text-gray-600">
+            Do you have any thoughts you’d like to share?
+          </p>
+          <div className="mt-8 px-4 flex flex-col justify-center items-center">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              className="md:w-[643px] w-full resize-none focus:outline-none border border-gray-300 px-3 py-3 mb-4"
+            />
+            <textarea
+              name="message"
+              className="md:w-[643px] w-full md:h-[208px] h-[340px] resize-none focus:outline-none border border-gray-300 px-3 py-3"
+              placeholder="Your review..."
+              defaultValue={""}
+            />
+          </div>
+          <div className="lg:flex justify-center gap-8 text-center lg:mt-6 md:mt-8 mt-8">
+            <input
+              type="submit"
+              value="Submit"
+              className="bg-gray-800 hover:bg-gray-700 transition duration-300 ease-out lg:max-w-[187px] w-full text-white py-3 font-medium text-base"
+            />
+          </div>
+        </form>
+      ) : (
+        <div className="font-bold text-center mt-16 text-4xl bg-indigo-100 p-10 mx-10 rounded">
+          Please{" "}
+          <Link className="text-indigo-600 hover:text-indigo-800" to="/login">
+            Login
+          </Link>{" "}
+          to add a review
         </div>
-        <div className="lg:flex justify-center gap-8 text-center lg:mt-6 md:mt-8 mt-8">
-          <input
-            type="submit"
-            value="Submit"
-            className="bg-gray-800 hover:bg-gray-700 transition duration-300 ease-out lg:max-w-[187px] w-full text-white py-3 font-medium text-base"
-          />
-        </div>
-      </form>
+      )}
     </div>
   );
 };

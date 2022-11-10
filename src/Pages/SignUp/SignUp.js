@@ -53,7 +53,7 @@ const SignUp = () => {
                 Login here
               </Link>
             </p>
-            <button
+            {/* <button
               aria-label="Continue with google"
               className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 p-3 border rounded-lg border-gray-700 flex items-center w-full mt-10 hover:bg-gray-100"
             >
@@ -84,15 +84,15 @@ const SignUp = () => {
               <p className="text-base font-medium ml-4 text-gray-700">
                 Continue with Google
               </p>
-            </button>
-            <div className="w-full flex items-center justify-between py-5">
+            </button> */}
+            {/* <div className="w-full flex items-center justify-between py-5">
               <hr className="w-full bg-gray-400" />
               <p className="text-base font-medium leading-4 px-2.5 text-gray-500">
                 OR
               </p>
               <hr className="w-full bg-gray-400" />
-            </div>
-            <div className="mb-4">
+            </div> */}
+            <div className="my-4">
               <label
                 htmlFor="name"
                 className="text-sm font-medium leading-none text-gray-800"

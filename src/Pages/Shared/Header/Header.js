@@ -21,12 +21,13 @@ const Header = () => {
           {/* For large screens */}
           <div className="dark:bg-gray-900 bg-gray-50 px-6 py-9">
             <div className="container mx-auto flex items-center justify-between">
-              <h1
+              <Link
+                to="/"
                 className="md:w-2/12 cursor-pointer text-gray-800 dark:text-white font-bold text-2xl"
                 aria-label="Home made."
               >
                 Home<span className="text-indigo-500">Made.</span>
-              </h1>
+              </Link>
               <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
                 <li>
                   <Link
@@ -250,32 +251,43 @@ const Header = () => {
                     </div>
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/login"
-                    className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
-                  >
-                    Login
-                    <div>
-                      <svg
-                        className="fill-stroke text-black dark:text-white"
-                        width={12}
-                        height={12}
-                        viewBox="0 0 12 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                {user?.email ? (
+                  <>
+                    <li>
+                      <Link
+                        to="/myreviews"
+                        className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                       >
-                        <path
-                          d="M4.5 3L7.5 6L4.5 9"
-                          stroke="currentColor"
-                          strokeWidth="0.75"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </Link>
-                </li>
+                        My Reviews
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/addservice"
+                        className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                      >
+                        Add Service
+                      </Link>
+                    </li>
+                    <li>
+                      <button
+                        onClick={handleLogOut}
+                        className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                      >
+                        Log Out
+                      </button>
+                    </li>
+                  </>
+                ) : (
+                  <li>
+                    <Link
+                      to="/login"
+                      className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                    >
+                      Login
+                    </Link>
+                  </li>
+                )}
               </ul>
             </div>
           </div>
