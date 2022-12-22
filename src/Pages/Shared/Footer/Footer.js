@@ -84,7 +84,7 @@ const Footer = () => {
           </p>
           <div className="border-l border-gray-800 pl-2 ml-2">
             <p className="text-base leading-4 text-gray-800">
-              Inc. All rigths reserved
+              Inc. All rights reserved
             </p>
           </div>
         </div>
